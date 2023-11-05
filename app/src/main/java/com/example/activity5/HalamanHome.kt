@@ -30,7 +30,7 @@ import com.example.activity5.ui.theme.Activity5Theme
 
 @Composable
 fun HalamanHome(
-    onNextButtonClick: () -> Unit
+    onNextButtonClicked: () -> Unit
 ) {
     val image = painterResource(id = R.drawable.esteh)
     Column(
@@ -80,7 +80,7 @@ fun HalamanHome(
         ) {
             Button(
                 modifier = Modifier.weight(1f),
-                onClick = onNextButtonClick
+                onClick = onNextButtonClicked
             ) {
                 Text(stringResource(R.string.next))
             }
