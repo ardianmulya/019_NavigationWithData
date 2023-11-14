@@ -59,7 +59,7 @@ fun HalamanDua(
                     horizontalArrangement = Arrangement.spacedBy(20.dp)
                 ) {
                     Text(stringResource(id = R.string.nama))
-                    Text(text = "contactUIState.nama")
+                    Text(text = orderUiState.nama)
                 }
                 Divider()
                 Spacer(modifier = Modifier.padding(16.dp))
@@ -68,7 +68,7 @@ fun HalamanDua(
                     horizontalArrangement = Arrangement.spacedBy(20.dp)
                 ) {
                     Text(stringResource(id = R.string.no_hp))
-                    Text(text = "contactUIState.noTelp")
+                    Text(text = orderUiState.noTelp)
                 }
                 Divider()
                 Spacer(modifier = Modifier.padding(16.dp))
@@ -77,7 +77,7 @@ fun HalamanDua(
                     horizontalArrangement = Arrangement.spacedBy(20.dp)
                 ) {
                     Text(stringResource(id = R.string.alamat))
-                    Text(text = "contactUIState.alamat")
+                    Text(text = orderUiState.alamat)
                 }
                 Divider()
                 Spacer(modifier = Modifier.padding(16.dp))
