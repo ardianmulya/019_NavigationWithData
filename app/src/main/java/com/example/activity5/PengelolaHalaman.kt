@@ -84,7 +84,7 @@ fun EsJumboApp(
                 HalamanTiga(onSubmitClicked = {
                     viewModel.setContact(it)
                     navController.navigate(PengelolaHalaman.Rasa.name)
-                })
+                }, onCancelButtonClicked = {navController.navigate(PengelolaHalaman.Home.name)})
             }
             composable(route = PengelolaHalaman.Rasa.name) {
                 val context = LocalContext.current
@@ -114,7 +114,7 @@ private fun cancelOrderAndNavigateToHome(
     navController: NavHostController
 ) {
     viewModel.resetOrder()
-    navController.popBackStack(PengelolaHalaman.Home.name, inclusive = false)
+    navController.popBackStack(PengelolaHalaman.Formulir.name, inclusive = false)
 }
 
 private fun cancelOrderAndNavigateToRasa(
